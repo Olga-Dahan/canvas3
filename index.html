@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script defer src = "assets/JS/myjs.js" ></script>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <form method="POST" id="myForm">
+        <input type="text" id="x" placeholder="Enter x">
+        <br>
+        <input type="text" id="y" placeholder="Enter y">
+        <br>
+        <input type="text" id="radius" placeholder="Enter radius">
+        <br>
+        <select id = "color">
+            <option value ="">Choose color</option>
+            <option value ="red">red</option>
+            <option value ="yellow">yellow</option>
+            <option value ="blue">blue</option>
+            <option value ="green">green</option>
+            <option value ="pink">pink</option>
+        </select>
+        <br>
+        <div id="notice"></div>
+        <button onclick="submitForm(event)">Draw Circle</button>
+        <br>
+    </form>
+    <canvas
+        id="myCanvas"
+        width="640"
+        height="480"
+    >
+    </canvas>
+</body>
+</html>
